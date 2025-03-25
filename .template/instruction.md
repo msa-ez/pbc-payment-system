@@ -71,7 +71,7 @@ npm run start
 8. Payment system의 Gateway 라우팅 설정을 진행하기 위해 application.yml(gateway/src/resources/application.yml)에 라우팅을 설정합니다.
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/884ee895-b385-43be-aa37-7626b1d70056" /> <br>
 
-9. Root에 위치한 Frontend에 web component 등록을 위해 index.html(frontend/public/index.html)에 Payment system을 아래와 같이 등록한다.
+9. Root에 위치한 Frontend에 web component 등록을 위해 index.html(frontend/public/index.html)에 Payment system을 아래와 같이 등록합니다.
 
 
 

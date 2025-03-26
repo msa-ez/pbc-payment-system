@@ -71,8 +71,45 @@ npm run start
 8. Payment system의 Gateway 라우팅 설정을 진행하기 위해 application.yml(gateway/src/resources/application.yml)에 라우팅을 설정합니다.
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/884ee895-b385-43be-aa37-7626b1d70056" /> <br>
 
-9. Root에 위치한 Frontend에 web component 등록을 위해 index.html(frontend/public/index.html)에 Payment system을 아래와 같이 등록합니다.
+9. Root에 위치한 Frontend에 web component 등록을 위해 index.html(frontend/public/index.html)에 Payment system의 17line에 아래와 같이 등록합니다.
+```
+<script src="<Payment system의 Frontend Url>/payment-system-app.js"></script>
+```
+<img width="1013" alt="image" src="https://github.com/user-attachments/assets/8a5e7b96-facd-4c0b-9e65-387c198a2d80" /> <br>
 
+10. Payment system을 SingleSPA로 동작하기 위해 Component의 \<template>과 <script>에 다음과 같이 코드를 생성한다.
+```
+// template
+<template>
+  <payment-system-app>
+      <payment-system
+          service-type="<payment-system frontend의 Payment.vue에 생성된 타입 ex) pay, refund, receipt...>"
+          :request-info="JSON.stringify(paymentData)" 
+          buyer-info-mode="<결제 detail 정보 옵션 ex) true, false>"
+      ></payment-system>
+  </payment-system-app>
+</template>
 
+// script
+data: () => ({
+  snackbar: {
+    paymentData: null,
+}),
+async created() {
+  if(!this.paymentData){
+    this.paymentData = {
+      itemId : this.decode(this.value._links.self.href.split("/")[this.value._links.self.href.split("/").length - 1]),
+      price: , // 직접 설정
+      name: "", // 직접 설정
+      buyerId: "", // 직접 설정
+      buyerEmail: "", // 직접 설정
+      buyerTel: "", // 직접 설정
+      buyerName: "" // 직접 설정
+    }
+  }
+}
+```
 
+Payment system에 대한 설정이 완료되면 Root Frontend UI에 아래와 같이 Payment system에 대한 UI가 생성된 것을 확인할 수 있다.
+![image](https://github.com/user-attachments/assets/5792ce28-b318-4ed8-b65d-d908fb1524ec) <br>
 

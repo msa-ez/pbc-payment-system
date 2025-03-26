@@ -110,6 +110,6 @@ async created() {
 }
 ```
 
-Payment system에 대한 설정이 완료되면 Root Frontend UI에 아래와 같이 Payment system에 대한 UI가 생성된 것을 확인할 수 있다.
+Payment system에 대한 설정이 완료되면 Root Frontend UI에 아래와 같이 Payment system에 대한 UI가 생성된 것을 확인할 수 있다. <br>
 ![image](https://github.com/user-attachments/assets/5792ce28-b318-4ed8-b65d-d908fb1524ec) <br>
 

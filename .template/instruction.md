@@ -12,9 +12,9 @@ PBC 결제 시스템은 모든 결제 관련 작업을 효율적이고 안전하
 3) 거래 내역 조회 <br>
    결제 상태 및 타임스탬프를 포함한 과거 거래의 상세 기록을 사용자가 볼 수 있도록 합니다.
 
-##사용 방법
+## 사용 방법
 
-## 1) 분석/설계
+### 1) 분석/설계
 1. Payment System 바운디드 컨텍스트 영역을 더블 클릭하여 PBC 패널을 활성화 합니다.
 
 <img width="1275" alt="image" src="https://github.com/user-attachments/assets/69cebda6-8334-4945-b0b7-7b061ad6c064" /> <br>
@@ -31,7 +31,7 @@ PBC 결제 시스템은 모든 결제 관련 작업을 효율적이고 안전하
   <img width="823" alt="image" src="https://github.com/user-attachments/assets/cfaa6b70-a489-42eb-8c18-823b8c9ed7dc" /> <br>
   
 
-## 2) 구현
+### 2) 구현
 1. 패널을 닫은 후, CODE를 클릭하여 코드 프리뷰를 통해 이벤트스토밍기반 생성된 코드를 확인합니다.
 <img width="714" alt="image" src="https://github.com/user-attachments/assets/4d3f35e7-30cb-483d-a3b5-2fd099101ed4" /> <br>
 

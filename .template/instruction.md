@@ -77,7 +77,7 @@ npm run start
 ```
 <img width="1013" alt="image" src="https://github.com/user-attachments/assets/8a5e7b96-facd-4c0b-9e65-387c198a2d80" /> <br>
 
-10. Payment system을 SingleSPA로 동작하기 위해 Component의 \<template>과 <script>에 다음과 같이 코드를 생성한다.
+10. Payment system을 SingleSPA로 동작하기 위해 Component의 \<template>과 <script>에 다음과 같이 코드를 생성합니다.
 ```
 // template
 <template>
@@ -110,6 +110,6 @@ async created() {
 }
 ```
 
-Payment system에 대한 설정이 완료되면 Root Frontend UI에 아래와 같이 Payment system에 대한 UI가 생성된 것을 확인할 수 있다. <br>
+Payment system에 대한 설정이 완료되면 Root Frontend UI에 아래와 같이 Payment system에 대한 UI가 생성됩니다. <br>
 ![image](https://github.com/user-attachments/assets/5792ce28-b318-4ed8-b65d-d908fb1524ec) <br>
 
